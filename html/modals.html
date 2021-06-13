@@ -1,0 +1,175 @@
+<!-- modal for name -->
+<div class="modal fade" id="exampleModalname" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Update Name</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form name="myform" action="settings.php" method="POST">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Enter Full Name">
+                    <input type="text" class="form-control my-2" id="cname" placeholder="Conform Full Name">
+                    <button type="submit" id="submitName" name="submitName" class="btn btn-primary">Update Name</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal for email -->
+<div class="modal fade" id="exampleModalemail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Update Email</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form name="myform" action="settings.php" method="POST" onsubmit="return validate()"
+                    enctype="multipart/form-data">
+                    <input type="text" class="form-control my-2" name="email" id="email" placeholder="Enter Full Email">
+                    <input type="text" class="form-control my-2" name="email" id="email" placeholder="Conform Full Email">
+                    <button type="submit" id="submit" class="btn btn-primary ">Update Data</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal for password -->
+<div class="modal fade" id="exampleModalpassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Change Password</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form name="myform" action="settings.php" method="POST" onsubmit="return validate()">
+                    <input type="text" class="form-control" name="password" id="password" placeholder="Enter Password">
+                    <!-- <input type="text" class="form-control my-2" id="cpassword" placeholder="Conform Password"> -->
+                    <button type="submit" class="btn btn-success">Save changes</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal for number -->
+<div class="modal fade" id="exampleModalnumber" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Update number</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form name="myform" action="settings.php" method="POST" onsubmit="return validate()"
+                    enctype="multipart/form-data">
+                    <input type="text" class="form-control my-2" name="number" id="number" placeholder="Number">
+                    <button type="submit" class="btn btn-success ">Save changes</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal for proffesstion -->
+<div class="modal fade" id="exampleModalproffesstion" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Update Proffesstion</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form name="myform" action="settings.php" method="POST" onsubmit="return validate()"
+                    enctype="multipart/form-data">
+                    <select name="proffession" id="proffession" name="proffession" class="form-control">
+                        <option value="Electrician( बिजली कारीगर )">Electrician ( बिजली कारीगर )</option>
+                        <option value="Carpenter( बढ़ई )">Carpenter ( बढ़ई )</option>
+                        <option value="Plumber( नलकार )">Plumber ( नलकार )</option>
+                        <option value="Laundryman( धोबी )">Barber ( नाई )</option>
+                        <option value="Mechanic( मैकेनिक )">Mechanic ( मैकेनिक )</option>
+                        <option value="Painter( पेंटर )">Painter ( पेंटर )</option>
+                        <option value="Labour( श्रम )">Labour ( श्रम )</option>
+                        <option value="Sweeper( सफ़ाईवाला )">Sweeper ( सफ़ाईवाला )</option>
+                        <option value="Gardner( माली )">Gardner ( माली )</option>
+                        <option value="Laundryman( धोबी )">Laundryman ( धोबी )</option>
+                    </select>
+                    <button type="submit" class="btn btn-success my-2">Save changes</button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal for city -->
+<div class="modal fade" id="exampleModalcity" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Update Email</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form name="myform" action="settings.php" method="POST" onsubmit="return validate()"
+                    enctype="multipart/form-data">
+                    <input type="text" class="form-control my-2" name="city" id="city" placeholder="City">
+                    <button type="submit" class="btn btn-success ">Save changes</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal for image -->
+<div class="modal fade" id="exampleModalimage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Upload Image</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form name="myform" action="settings.php" method="POST" onsubmit="return validate()"
+                    enctype="multipart/form-data">
+                    <input type="file" class="form-control my-2" name="image" id="image" accept=".jpg,.png,.gif,.jpeg">
+                    <button type="submit" class="btn btn-success " name="updateDP" value="updateDP" id="updateDP">Change DP</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

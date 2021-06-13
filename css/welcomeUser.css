@@ -1,0 +1,34 @@
+body{
+    background-color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.card-text{
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+    display: block;
+    color: white;
+    text-decoration: none !important;
+
+}
+.card{
+    margin: 4px;
+    border-radius: 10px;
+    box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+    transition: all .2s ease; /* back to normal */
+}
+/* .card:hover{
+    transform: translate3D(0,-1px,0) scale(1.05);
+    transition: all .10s ease; 
+    z-index: 1;
+    box-shadow: 8px 28px 50px rgba(39,44,49,.5), 1px 6px 12px rgba(39,44,49,.04);
+    
+} */
+
+.big-font{
+    color: white;
+    background-color: black;
+    display: block; 
+    padding: 4px; 
+    text-align: center;
+}
